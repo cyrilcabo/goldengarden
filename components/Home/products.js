@@ -5,6 +5,9 @@ import Button from '@material-ui/core/Button';
 //Custom components
 import ProductsContainer from '../Products/container';
 
+//Utils
+import Router from 'next/router';
+
 //Styles
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
@@ -50,7 +53,7 @@ const HomeProducts = (props) => {
 					<ProductsContainer products={props.products.filter(item => item.featured)} />
 				</Grid>
 				<Grid item>
-					<Button className={classes.CTA}> See all </Button>
+					<Button className={classes.CTA} onClick={() => Router.push('/products')}> See all </Button>
 				</Grid>
 			</Grid>
 		</Grid>

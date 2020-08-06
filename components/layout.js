@@ -26,7 +26,6 @@ const Layout = (props) => {
 		<Grid item xs={12}>
 			<Head>
 				<title> goldengarden </title>
-				<meta name="viewport" content="" />
 			    <meta name="viewport" content="width=device-width, user-scalable=no" />
 			</Head>
 			<Navbar navs={navs} setActive={setActive} active={props.active} />

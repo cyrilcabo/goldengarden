@@ -2,6 +2,9 @@
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
+//Utils
+import Router from 'next/router';
+
 //Styles
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
@@ -73,7 +76,7 @@ const HomeBanner = () => {
 					<p className={classes.subTitle}> Make your house <span style={{color: '#E69E0C'}}>golden</span> by adding a <span style={{color: '#2F7E18'}}>garden</span>. </p>
 				</Grid>
 				<Grid item>
-					<Button className={classes.CTA}> EXPLORE </Button>
+					<Button className={classes.CTA} onClick={() => Router.push('/products')}> EXPLORE </Button>
 				</Grid>
 			</Grid>
 		</Grid>
