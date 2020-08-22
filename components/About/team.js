@@ -39,15 +39,15 @@ const useStyle = makeStyles(theme => ({
 		}
 	},
 	memberImg: {
-		height: 200,
+		height: 170,
 		[theme.breakpoints.down('md')]: {
-			height: 180,
-		},
-		[theme.breakpoints.down('sm')]: {
 			height: 150,
 		},
+		[theme.breakpoints.down('sm')]: {
+			height: 140,
+		},
 		[theme.breakpoints.down('xs')]: {
-			height: 120,
+			height: 110,
 		}
 	},
 	memberTitle: {
